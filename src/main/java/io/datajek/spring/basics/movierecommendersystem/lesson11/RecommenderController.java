@@ -29,7 +29,7 @@ public class RecommenderController {
         return recommender.getMovie(name);
     }
 
-    @PostMapping("/movies")
+    @PostMapping("/movies/add")
     public String insertMovie(@RequestBody Movie movie){
         recommender.insertMovie(movie);
         return "Movie inserted successfully";
