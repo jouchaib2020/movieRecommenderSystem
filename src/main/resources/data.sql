@@ -1,0 +1,21 @@
+-- Inserting movies into the Movie table
+INSERT INTO Movie (title, rating, genre) VALUES ('Ali Baba', 5.0, 'Drama');
+INSERT INTO Movie (title, rating, genre) VALUES ('The Matrix', 8.7, 'Science Fiction');
+INSERT INTO Movie (title, rating, genre) VALUES ('Inception', 8.8, 'Science Fiction');
+INSERT INTO Movie (title, rating, genre) VALUES ('The Shawshank Redemption', 9.3, 'Drama');
+INSERT INTO Movie (title, rating, genre) VALUES ('Pulp Fiction', 8.9, 'Crime');
+INSERT INTO Movie (title, rating, genre) VALUES ('Forrest Gump', 8.8, 'Drama');
+INSERT INTO Movie (title, rating, genre) VALUES ('The Dark Knight', 9.0, 'Action');
+INSERT INTO Movie (title, rating, genre) VALUES ('Titanic', 7.8, 'Romance');
+INSERT INTO Movie (title, rating, genre) VALUES ('Avatar', 7.8, 'Science Fiction');
+INSERT INTO Movie (title, rating, genre) VALUES ('Jurassic Park', 8.1, 'Science Fiction');
+INSERT INTO Movie (title, rating, genre) VALUES ('Gladiator', 8.5, 'Action');
+INSERT INTO Movie (title, rating, genre) VALUES ('The Lord of the Rings: The Fellowship of the Ring', 8.8, 'Fantasy');
+INSERT INTO Movie (title, rating, genre) VALUES ('The Godfather', 9.2, 'Crime');
+INSERT INTO Movie (title, rating, genre) VALUES ('Fight Club', 8.8, 'Drama');
+INSERT INTO Movie (title, rating, genre) VALUES ('The Silence of the Lambs', 8.6, 'Crime');
+INSERT INTO Movie (title, rating, genre) VALUES ('Inglorious Basterds', 8.3, 'War');
+INSERT INTO Movie (title, rating, genre) VALUES ('Interstellar', 8.6, 'Science Fiction');
+INSERT INTO Movie (title, rating, genre) VALUES ('The Departed', 8.5, 'Crime');
+INSERT INTO Movie (title, rating, genre) VALUES ('Eternal Sunshine of the Spotless Mind', 8.3, 'Romance');
+INSERT INTO Movie (title, rating, genre) VALUES ('Schindler''s List', 8.9, 'Drama');
