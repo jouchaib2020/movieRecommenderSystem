@@ -3,6 +3,10 @@ package io.datajek.spring.basics.movierecommendersystem.relationships;
 import jakarta.persistence.*;
 import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ResourceBundle;
+
 @Entity
 public class Player {
     @Id
@@ -12,6 +16,9 @@ public class Player {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "profile_id", referencedColumnName = "id")
     private PlayerProfile playerProfile;
+
+    @OneToMany(mappedBy = "player", cascade = CascadeType.ALL)
+    private List<Registration> registrations = new ArrayList<>();
 
     public Player( ) {
 
@@ -50,5 +57,28 @@ public class Player {
 
     public void setPlayerProfile(PlayerProfile playerProfile) {
         this.playerProfile = playerProfile;
+    }
+
+    public List<Registration> getRegistrations() {
+        return registrations;
+    }
+
+    public void setRegistrations(List<Registration> registrations) {
+        this.registrations = registrations;
+    }
+
+    //set up bi-directional relationship with Registration class
+    public void registerPlayer(Registration reg) {
+        //add registration to the list
+        registrations.add(reg);
+        //set the player field in the registration
+        reg.setPlayer(this);
+    }
+
+    public void removeRegistration(Registration reg) {
+        if (registrations != null)
+            registrations.remove(reg);
+        //set the player field in the registration
+        reg.setPlayer(null);
     }
 }

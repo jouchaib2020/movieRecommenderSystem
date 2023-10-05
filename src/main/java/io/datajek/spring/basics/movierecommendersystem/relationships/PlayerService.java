@@ -32,4 +32,16 @@ public class PlayerService {
         player.setPlayerProfile(profile);
         return repo.save(player);
     }
+
+    public Player assignRegistration(int id, Registration registration) {
+        Player player = repo.findById(id).get();
+        player.registerPlayer(registration);
+        return repo.save(player);
+    }
+
+    public Player removeRegistration(int id, Registration registration) {
+        Player player = repo.findById(id).get();
+        player.removeRegistration(registration);
+        return repo.save(player);
+    }
 }
